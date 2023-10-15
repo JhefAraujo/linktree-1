@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(MonteCarlo-Regular.ttf);
+}
+
+@media screen and (min-width: 601px) {
+    body {
+        background-image: url(pcbg.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .link {
+        background-image: url(wideframe.jpg);
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    body {
+        background-image: url(lightbg.jpg);
+        background-size: cover;
+        background-position: center center;
+        box-shadow: inset 0px 0px 44px 44px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .scale {
+        transform: scale(1.2) translateY(-25px);
+    }
+
+    main {
+        overflow: hidden;
+    }
+
+    .link1 {
+        background-image: url(igframe.jpg);
+        width: 290px;
+    }
+    .link2 {
+        background-image: url(portframe.jpg);
+        width: 290px;
+    }
+    .link3 {
+        background-image: url(whatsframe.jpg);
+        width: 290px;
+    }
+
+    .darkmode {
+        background-image: url(darkbg.jpg);
+        background-size: cover;
+    }
+    .darklink1 {
+        background-image: url(igdark.jpg);
+        width: 290px;
+    }
+    .darklink2 {
+        background-image: url(portdark.jpg);
+        width: 290px;
+    }
+    .darklink3 {
+        background-image: url(darkwhats.jpg);
+        width: 290px;
+    }
+
+    .darkmode {
+        background-image: url(darkbg.jpg);
+        background-size: cover;
+    }
+    .darklink {
+        background-image: url(darkframe.jpg);
+        width: 290px;
+    }
+    .button {
+        transform: translate(-35px, 100px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url(lightbg.jpg);
+        background-size: cover;
+        box-shadow: inset 0px 0px 44px 44px rgba(0, 0, 0, 0.35);
+    }
+
+    .link1 {
+        background-image: url(igframe.jpg);
+        width: 290px;
+    }
+    .link2 {
+        background-image: url(portframe.jpg);
+        width: 290px;
+    }
+    .link3 {
+        background-image: url(whatsframe.jpg);
+        width: 290px;
+    }
+
+    .darkmode {
+        background-image: url(darkbg.jpg);
+        background-size: cover;
+    }
+    .darklink1 {
+        background-image: url(igdark.jpg);
+        width: 290px;
+    }
+    .darklink2 {
+        background-image: url(portdark.jpg);
+        width: 290px;
+    }
+    .darklink3 {
+        background-image: url(darkwhats.jpg);
+        width: 290px;
+    }
+}
+
+.button {
+    filter: drop-shadow(0px 0px 5px #000);
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.button img {
+    height: 100px;
+    border-radius: 5px;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    row-gap: 25px;
+}
+
+.pfp {
+    height: 250px;
+    width: 160px;
+    margin-bottom: 0px;
+    transform: scale(0.8);
+    background-image: url(redpfp.png);
+    background-size: contain;
+    filter: drop-shadow(0px 10px 10px #000);
+}
+
+.pfp:active {
+    animation: appearpfp 0.5s ease-in-out;
+}
+
+.darkpfp {
+    height: 250px;
+    width: 160px;
+    background-image: url(darkpfp.png);
+    background-size: contain;
+    filter: drop-shadow(0px 10px 10px #000);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link1 {
+    height: 102px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000cb;
+    font-size: x-large;
+}
+.link2 {
+    height: 102px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000cb;
+    font-size: x-large;
+}
+.link3 {
+    height: 102px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000cb;
+    font-size: x-large;
+}
+
+.link h2 {
+    transform: translateY(-3px);
+}
+
+.darklink {
+    height: 102px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    animation: appear 0.5s ease-in-out;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appearpfp {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform:scale(0.95);
+        opacity: 1;
+    }
+}
+
+.scale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
