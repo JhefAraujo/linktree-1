@@ -1,55 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandra Seraphim</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <main>
-        <div class="scale">
-            <div class="button" onclick="myFunction()"> <img id="imgplus" src="sun.jpg" alt=""></div>
-            <div class="pfp" id="pfp"></div>
-            <div class="links">
-                <a href="https://instagram.com/alexandra_seraphim">
-                    <div class="link1" id="link1">
-                    </div>
-                </a>
-                <a href="">
-                    <div class="link2" id="link2">
-                    </div>
-                </a>
-                <a href="https://wa.me/5511943239197">
-                    <div class="link3" id="link3">
-                    </div>
-                </a>
-            </div>
+        <div class="wrapper">
+            <div class="btn"><a href="https://www.instagram.com/alexandra_seraphim">Instagram</a></div>
+            <div class="btn"><a href="#">Portfolio</a></div>
+            <div class="btn"><a href="https://wa.me/5511943239197">Whatsapp</a></div>
         </div>
     </main>
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("darkmode");
-            var link1 = document.getElementById("link1");
-            link1.classList.toggle("darklink1");
-            var link1 = document.getElementById("link2");
-            link1.classList.toggle("darklink2");
-            var link1 = document.getElementById("link3");
-            link1.classList.toggle("darklink3");
-            var pfp = document.getElementById("pfp");
-            pfp.classList.toggle("darkpfp");
-            var img = document.getElementById('imgplus').src;
-            if (img.indexOf('sun.jpg') != -1) {
-                document.getElementById('imgplus').src = 'moon.jpg';
-            }
-            else {
-                document.getElementById('imgplus').src = 'sun.jpg';
-            }
-        }
-    </script>
 </body>
-
 </html>
