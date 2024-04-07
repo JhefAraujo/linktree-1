@@ -45,7 +45,7 @@ main {
     row-gap: 15px;
     flex-direction: column;
     width: 90%;
-    transform: translateY(20%);
+    transform: translateY(10%);
 }
 
 a {
